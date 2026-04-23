@@ -1,0 +1,10 @@
+lst = list(map(int, input("Enter numbers: ").split()))
+tup = tuple(set(lst))
+print("Unique Tuple:", tup)
+d = {x: x**2 for x in lst}
+print("Squares:", d)
+print("Max square:", max(d.values()))
+total = sum(lst)
+avg = total / len(lst)
+print("Sum:", total, "Average:", avg)
+print("Greater than avg:", [x for x in lst if x > avg])

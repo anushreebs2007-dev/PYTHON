@@ -1,0 +1,6 @@
+s = input("Enter sentence: ")
+chars = list(s)
+chars = list(set(chars))
+chars.sort()
+result = "".join(chars)
+print("Final:", result)
